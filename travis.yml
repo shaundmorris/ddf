@@ -12,7 +12,7 @@
   "before_install": [
     "echo \"MAVEN_OPTS='-Xmx2048m'\" > ~/.mavenrc"
   ],
-  "install": true,
+  "install": "travis_wait 240 mvn -T 2C install --quiet -DskipTests=true -B -Dpmd.skip=true -Djacoco.skip=true -Dfindbugs.skip=true -Dcheckstyle.skip=true -DskipTestScope=true -DskipProvidedScope=true -DskipRuntimeScope=true --settings target/travis/settings.xml",
   "language": "java",
   "jdk": "oraclejdk8",
   "global_env": "JAVA_OPTS=-Xmx4g",

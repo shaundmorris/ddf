@@ -1,8 +1,4 @@
 "sudo": false,
-# blocklist
-branches:
-  except:
-  - gh-pages
 "git": {
   "depth": 1
 },

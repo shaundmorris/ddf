@@ -1,0 +1,22 @@
+{
+  "sudo": false,
+  "git": {
+    "depth": 1
+  },
+  "cache": {
+    "directories": [
+      ".autoconf",
+      "$HOME/.m2"
+    ]
+  },
+  "before_install": [
+    "echo \"MAVEN_OPTS='-Xmx2048m'\" > ~/.mavenrc"
+  ],
+  "install": true,
+  "language": "java",
+  "jdk": "oraclejdk8",
+  "global_env": "JAVA_OPTS=-Xmx4g",
+  "group": "stable",
+  "dist": "precise",
+  "os": "linux"
+}

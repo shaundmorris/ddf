@@ -92,7 +92,7 @@
                module. Use the contents of that for OUR version of startup.properties, but don't
                forget to replace the felix config admin bundle with OUR platform-osgi-configadmin
                bundle if you copy-pasted. -->
-        <karaf.version>4.1.2</karaf.version>
+        <karaf.version>4.2.0</karaf.version>
         <felix.configadmin.version>1.8.14</felix.configadmin.version>
         <!--  ################################################################################  -->
 
@@ -204,7 +204,7 @@
         <!--default url substitutions: preface with a \ to disable automatic hyperlinking-->
         <public_url>http://{FQDN}:{PORT}</public_url>
         <secure_url>https://{FQDN}:{PORT}</secure_url>
-        <home_directory>&lt;DDF_HOME&gt;</home_directory>
+        <home_directory>&lt;DDF_HOME></home_directory>
         <!--Needed for documentation formatting
             '@' is an escape character for maven filtering. Use this property if '@'
             appears on the same line as other filtered properties-->

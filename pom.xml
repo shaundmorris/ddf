@@ -244,7 +244,7 @@
         <jts.spatial4j.version>1.15.0</jts.spatial4j.version>
         <jts.version>1.14.0</jts.version>
         <jvnet-ogc.version>2.6.1</jvnet-ogc.version>
-        <karaf.version>4.2.2</karaf.version>
+        <karaf.version>4.2.5</karaf.version>
         <la4j.version>0.6.0</la4j.version>
         <log4j.version>1.2.17</log4j.version>
         <logback.classic.version>1.2.3</logback.classic.version>

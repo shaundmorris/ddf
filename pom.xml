@@ -275,7 +275,7 @@
         <ogc-filter-v_1_1_0-schema.thirdparty.version>1.1.0_5</ogc-filter-v_1_1_0-schema.thirdparty.version>
         <pdfbox.version>2.0.11</pdfbox.version>
         <poi.version>3.17</poi.version>
-        <protobuf.version>3.6.1</protobuf.version>
+        <protobuf.version>3.8.0</protobuf.version>
         <proton.version>0.27.1</proton.version>
         <qpid-jms.version>0.33.0</qpid-jms.version>
         <require-css.version>0.1.10</require-css.version>

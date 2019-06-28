@@ -78,7 +78,7 @@
         <!--default url substitutions: preface with a \ to disable automatic hyperlinking-->
         <public_url>http://{FQDN}:{PORT}</public_url>
         <secure_url>https://{FQDN}:{PORT}</secure_url>
-        <home_directory>&lt;DDF_HOME&gt;</home_directory>
+        <home_directory>&lt;DDF_HOME></home_directory>
         <!--Needed for documentation formatting
             '@' is an escape character for maven filtering. Use this property if '@'
             appears on the same line as other filtered properties-->
@@ -268,7 +268,7 @@
         <!-- Note: The swissbox version needs to match the version used by pax-exam . -->
         <org.ops4j.pax.swissbox.version>1.8.2</org.ops4j.pax.swissbox.version>
         <org.rrd4j.version>3.3.1</org.rrd4j.version>
-        <org.slf4j.version>1.7.1</org.slf4j.version>
+        <org.slf4j.version>1.7.26</org.slf4j.version>
         <osgi.version>5.0.0</osgi.version>
         <owasp-html-sanitizer.version>20171016.1</owasp-html-sanitizer.version>
         <ows-v_1_0_0-schema.version>1.1.0</ows-v_1_0_0-schema.version>
@@ -687,8 +687,7 @@
                             </goals>
                             <configuration>
                                 <rules>
-                                    <ArtifactSizeEnforcerRule
-                                        implementation="org.codice.maven.artifactsize.ArtifactSizeEnforcerRule"/>
+                                    <ArtifactSizeEnforcerRule implementation="org.codice.maven.artifactsize.ArtifactSizeEnforcerRule"/>
                                 </rules>
                             </configuration>
                         </execution>
@@ -710,8 +709,7 @@
                         </goals>
                         <configuration>
                             <rules>
-                                <ArtifactSizeEnforcerRule
-                                    implementation="org.codice.maven.artifactsize.ArtifactSizeEnforcerRule"/>
+                                <ArtifactSizeEnforcerRule implementation="org.codice.maven.artifactsize.ArtifactSizeEnforcerRule"/>
                             </rules>
                         </configuration>
                     </execution>
@@ -912,20 +910,17 @@
                                                 will be set to 0 not 0.75
                                                 -->
                                                 <limits>
-                                                    <limit
-                                                        implementation="org.codice.jacoco.LenientLimit">
+                                                    <limit implementation="org.codice.jacoco.LenientLimit">
                                                         <counter>INSTRUCTION</counter>
                                                         <value>COVEREDRATIO</value>
                                                         <minimum>0.75</minimum>
                                                     </limit>
-                                                    <limit
-                                                        implementation="org.codice.jacoco.LenientLimit">
+                                                    <limit implementation="org.codice.jacoco.LenientLimit">
                                                         <counter>BRANCH</counter>
                                                         <value>COVEREDRATIO</value>
                                                         <minimum>0.75</minimum>
                                                     </limit>
-                                                    <limit
-                                                        implementation="org.codice.jacoco.LenientLimit">
+                                                    <limit implementation="org.codice.jacoco.LenientLimit">
                                                         <counter>COMPLEXITY</counter>
                                                         <value>COVEREDRATIO</value>
                                                         <minimum>0.75</minimum>

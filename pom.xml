@@ -78,7 +78,7 @@
         <!--default url substitutions: preface with a \ to disable automatic hyperlinking-->
         <public_url>http://{FQDN}:{PORT}</public_url>
         <secure_url>https://{FQDN}:{PORT}</secure_url>
-        <home_directory>&lt;DDF_HOME&gt;</home_directory>
+        <home_directory>&lt;DDF_HOME></home_directory>
         <!--Needed for documentation formatting
             '@' is an escape character for maven filtering. Use this property if '@'
             appears on the same line as other filtered properties-->
@@ -161,7 +161,7 @@
         <abdera.version>1.1.3</abdera.version>
         <antlr.version>4.3</antlr.version>
         <apache.shiro.version>1.4.0</apache.shiro.version>
-        <artemis.version>2.6.2</artemis.version>
+        <artemis.version>2.7.0</artemis.version>
         <asm.version>3.3.1</asm.version>
         <awaitility.version>3.1.2</awaitility.version>
         <aws-java-sdk-bundle.version>1.11.344_1</aws-java-sdk-bundle.version>
@@ -687,8 +687,7 @@
                             </goals>
                             <configuration>
                                 <rules>
-                                    <ArtifactSizeEnforcerRule
-                                        implementation="org.codice.maven.artifactsize.ArtifactSizeEnforcerRule"/>
+                                    <ArtifactSizeEnforcerRule implementation="org.codice.maven.artifactsize.ArtifactSizeEnforcerRule"/>
                                 </rules>
                             </configuration>
                         </execution>
@@ -710,8 +709,7 @@
                         </goals>
                         <configuration>
                             <rules>
-                                <ArtifactSizeEnforcerRule
-                                    implementation="org.codice.maven.artifactsize.ArtifactSizeEnforcerRule"/>
+                                <ArtifactSizeEnforcerRule implementation="org.codice.maven.artifactsize.ArtifactSizeEnforcerRule"/>
                             </rules>
                         </configuration>
                     </execution>
@@ -912,20 +910,17 @@
                                                 will be set to 0 not 0.75
                                                 -->
                                                 <limits>
-                                                    <limit
-                                                        implementation="org.codice.jacoco.LenientLimit">
+                                                    <limit implementation="org.codice.jacoco.LenientLimit">
                                                         <counter>INSTRUCTION</counter>
                                                         <value>COVEREDRATIO</value>
                                                         <minimum>0.75</minimum>
                                                     </limit>
-                                                    <limit
-                                                        implementation="org.codice.jacoco.LenientLimit">
+                                                    <limit implementation="org.codice.jacoco.LenientLimit">
                                                         <counter>BRANCH</counter>
                                                         <value>COVEREDRATIO</value>
                                                         <minimum>0.75</minimum>
                                                     </limit>
-                                                    <limit
-                                                        implementation="org.codice.jacoco.LenientLimit">
+                                                    <limit implementation="org.codice.jacoco.LenientLimit">
                                                         <counter>COMPLEXITY</counter>
                                                         <value>COVEREDRATIO</value>
                                                         <minimum>0.75</minimum>

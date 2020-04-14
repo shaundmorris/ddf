@@ -139,7 +139,7 @@
         <pax.web.version>7.2.11</pax.web.version>
         <restito.version>0.8.2</restito.version>
         <xmlunit.version>1.4</xmlunit.version>
-        <xmlunit-matchers.version>2.5.1</xmlunit-matchers.version>
+        <xmlunit-matchers.version>2.6.4</xmlunit-matchers.version>
         <auth0.jwt.version>3.8.1</auth0.jwt.version>
 
         <!--Project properties-->

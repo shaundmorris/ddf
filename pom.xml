@@ -316,7 +316,7 @@
         <wss4j.version>2.2.3</wss4j.version>
         <xalan.bundle.version>2.7.2_3</xalan.bundle.version>
         <xalan.version>2.7.2</xalan.version>
-        <xerces.version>2.11.0</xerces.version>
+        <xerces.version>2.12.0</xerces.version>
         <xerces.bundle.version>2.11.0_1</xerces.bundle.version>
         <xml-apis.version>1.4.01</xml-apis.version>
         <xmlbeans.version>3.0.2</xmlbeans.version>

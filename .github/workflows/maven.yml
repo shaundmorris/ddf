@@ -36,4 +36,4 @@ jobs:
           key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-m2
     - name: Run itests
-      run: mvn -B package --file distribution/tests/itests/test-itests-ddf/pom.xml
+      run: mvn -B package --file distribution/test/itests/test-itests-ddf/pom.xml

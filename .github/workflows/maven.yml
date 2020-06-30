@@ -25,7 +25,8 @@ jobs:
         java-version: 1.8
     - uses: actions/checkout@v2
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
+    #  run: mvn -B package --file pom.xml
+      run: mvn -B package --file distribution/test/pom.xml
   itest:
     runs-on: ubuntu-latest
     needs: build

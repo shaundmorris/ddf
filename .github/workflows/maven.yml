@@ -34,7 +34,8 @@ jobs:
     - uses: actions/cache@v2
       with:
           path: ~/.m2/repository
-          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-m2
+    - uses: actions/checkout@v2
     - name: Run itests
-      run: mvn -B package --file distribution/test/itests/test-itests-ddf/pom.xml
+      run: mvn -B test --file distribution/test/itests/test-itests-ddf/pom.xml

@@ -313,7 +313,7 @@
         <xalan.version>2.7.2</xalan.version>
         <xerces.version>2.12.0</xerces.version>
         <xerces.bundle.version>2.12.0_1</xerces.bundle.version>
-        <xml-apis.version>1.4.01</xml-apis.version>
+        <xml-apis.version>2.0.2</xml-apis.version>
         <xmlbeans.version>3.1.0</xmlbeans.version>
         <xmlsec.version>2.1.4</xmlsec.version>
         <xpp3.bundle.version>1.1.4c_6</xpp3.bundle.version>

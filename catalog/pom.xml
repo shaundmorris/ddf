@@ -408,6 +408,7 @@
         <module>spatial</module>
         <module>validator</module>
         <module>confluence</module>
+        <module>catalog-docker-health-check</module>
     </modules>
     <build>
         <plugins>

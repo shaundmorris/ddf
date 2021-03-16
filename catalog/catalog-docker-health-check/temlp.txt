@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+Date: Sat, 27 Feb 2021 06:27:17 GMT
+X-XSS-Protection: 1; mode=block
+X-Frame-Options: SAMEORIGIN
+X-Content-Security-Policy: default-src 'none'; connect-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'
+Cache-Control: private, max-age=604800, immutable
+Set-Cookie: JSESSIONID=node0tqt04pz0a3ionrdh3j37hxsl9.node0; Path=/; Secure; HttpOnly
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Content-Type: */*
+Content-Length: 0
+Server: Jetty(9.4.28.v20200408)
+

@@ -65,6 +65,7 @@
                         <groupId>io.fabric8</groupId>
                         <artifactId>docker-maven-plugin</artifactId>
                         <configuration>
+                            <registry>http://artifacts.phx.connexta.com:18444/repository/docker-internal</registry>
                             <images>
                                 <image>
                                     <name>docker.io/codice/ddf:${project.version}</name>
@@ -74,7 +75,18 @@
                                             <descriptor>files.xml</descriptor>
                                         </assembly>
                                     </build>
-                                </image>
+                                    <!-- <run>
+                                        <ports> 
+                                            <port>registry.port:10001</port>
+                                          </ports>
+                                          <wait> 
+                                            <http>
+                                               <url>http://artifacts.phx.connexta.com:${registry.port}/repository/docker-registry</url>
+                                            </http>
+                                          </wait>
+                                          <time>10000</time>
+                                        </run> -->
+                                </image> 
                             </images>
                         </configuration>
                         <executions>

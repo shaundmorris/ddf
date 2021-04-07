@@ -63,7 +63,7 @@
         <dependency>
             <groupId>org.geotools</groupId>
             <artifactId>gt-geojson</artifactId>
-            <version>18.0</version>
+            <version>25.0</version>
             <scope>test</scope>
         </dependency>
         <dependency>

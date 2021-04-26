@@ -24,7 +24,7 @@
     <packaging>bundle</packaging>
 
     <properties>
-        <com.rometools.version>1.9.0</com.rometools.version>
+        <com.rometools.version>1.15.0</com.rometools.version>
         <!-- For maven-surefire-plugin -->
         <surefire.argline.append>-Duser.timezone=UTC</surefire.argline.append>
     </properties>

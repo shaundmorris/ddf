@@ -1,0 +1,321 @@
+version: 2
+updates:
+- package-ecosystem: maven
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 20
+  ignore:
+  - dependency-name: ddf.support:support-githooks
+    versions:
+    - 2.3.17
+  - dependency-name: ddf.support:support-checkstyle
+    versions:
+    - 2.3.17
+  - dependency-name: ddf.support:artifact-size-enforcer
+    versions:
+    - 2.3.17
+  - dependency-name: ddf.support:support-owasp
+    versions:
+    - 2.3.17
+  - dependency-name: org.geotools:gt-geojson
+    versions:
+    - "24.2"
+  - dependency-name: net.bytebuddy:byte-buddy-agent
+    versions:
+    - 1.10.20
+  - dependency-name: net.bytebuddy:byte-buddy
+    versions:
+    - 1.10.20
+  - dependency-name: org.apache.cxf:cxf-wadl2java-plugin
+    versions:
+    - 3.4.2
+  - dependency-name: org.apache.cxf.karaf:apache-cxf:features
+    versions:
+    - 3.4.2
+  - dependency-name: org.apache.cxf:cxf-rt-rs-security-jose-jaxrs
+    versions:
+    - 3.4.2
+  - dependency-name: org.apache.cxf:cxf-rt-rs-security-jose
+    versions:
+    - 3.4.2
+  - dependency-name: org.apache.cxf:cxf-rt-features-logging
+    versions:
+    - 3.4.2
+  - dependency-name: org.apache.cxf:cxf-rt-rs-security-oauth2
+    versions:
+    - 3.4.2
+  - dependency-name: org.apache.cxf:cxf-rt-rs-security-sso-saml
+    versions:
+    - 3.4.2
+  - dependency-name: org.apache.cxf:cxf-codegen-plugin
+    versions:
+    - 3.4.2
+  - dependency-name: org.apache.cxf:cxf-rt-transports-http-jetty
+    versions:
+    - 3.4.2
+  - dependency-name: org.apache.cxf:cxf-rt-frontend-jaxws
+    versions:
+    - 3.4.2
+  - dependency-name: org.apache.cxf:cxf-rt-ws-policy
+    versions:
+    - 3.4.2
+  - dependency-name: org.apache.cxf:cxf-rt-rs-security-xml
+    versions:
+    - 3.4.2
+  - dependency-name: org.apache.cxf:cxf-rt-rs-client
+    versions:
+    - 3.4.2
+  - dependency-name: org.apache.cxf:cxf-rt-frontend-jaxrs
+    versions:
+    - 3.4.2
+  - dependency-name: org.apache.cxf:cxf-rt-transports-http
+    versions:
+    - 3.4.2
+  - dependency-name: org.apache.cxf:cxf-rt-ws-security
+    versions:
+    - 3.4.2
+  - dependency-name: org.apache.cxf:cxf-rt-security
+    versions:
+    - 3.4.2
+  - dependency-name: org.apache.cxf:cxf-core
+    versions:
+    - 3.4.2
+  - dependency-name: org.apache.solr:solr-test-framework
+    versions:
+    - 8.8.0
+  - dependency-name: org.apache.lucene:lucene-queryparser
+    versions:
+    - 8.8.0
+  - dependency-name: org.apache.lucene:lucene-core
+    versions:
+    - 8.8.0
+  - dependency-name: org.apache.lucene:lucene-analyzers-common
+    versions:
+    - 8.8.0
+  - dependency-name: org.apache.solr:solr-solrj
+    versions:
+    - 8.8.0
+  - dependency-name: org.apache.solr:solr-core
+    versions:
+    - 8.8.0
+  - dependency-name: org.apache.tika:tika-parsers
+    versions:
+    - "1.25"
+  - dependency-name: org.apache.tika:tika-core
+    versions:
+    - "1.25"
+  - dependency-name: org.eclipse.jetty:jetty-util
+    versions:
+    - 11.0.0
+    - 9.4.35.v20201120
+  - dependency-name: org.eclipse.jetty.websocket:websocket-servlet
+    versions:
+    - 11.0.0
+    - 9.4.35.v20201120
+  - dependency-name: org.eclipse.jetty:jetty-http
+    versions:
+    - 11.0.0
+    - 9.4.35.v20201120
+  - dependency-name: org.eclipse.jetty:jetty-security
+    versions:
+    - 11.0.0
+    - 9.4.35.v20201120
+  - dependency-name: org.eclipse.jetty:jetty-xml
+    versions:
+    - 11.0.0
+    - 9.4.35.v20201120
+  - dependency-name: org.eclipse.jetty:jetty-servlet
+    versions:
+    - 11.0.0
+    - 9.4.35.v20201120
+  - dependency-name: org.eclipse.jetty:jetty-server
+    versions:
+    - 11.0.0
+    - 9.4.35.v20201120
+  - dependency-name: org.apache.ant:ant-launcher
+    versions:
+    - 1.10.9
+  - dependency-name: org.apache.ant:ant
+    versions:
+    - 1.10.9
+  - dependency-name: com.thoughtworks.xstream:xstream
+    versions:
+    - 1.4.15
+  - dependency-name: org.apache.commons:commons-pool2
+    versions:
+    - 2.9.0
+  - dependency-name: org.opensaml:opensaml-xacml-saml-impl
+    versions:
+    - 3.4.5
+  - dependency-name: org.opensaml:opensaml-xacml-saml-api
+    versions:
+    - 3.4.5
+  - dependency-name: org.opensaml:opensaml-xacml-impl
+    versions:
+    - 3.4.5
+  - dependency-name: org.opensaml:opensaml-xacml-api
+    versions:
+    - 3.4.5
+  - dependency-name: org.opensaml:opensaml-storage-api
+    versions:
+    - 3.4.5
+  - dependency-name: org.opensaml:opensaml-saml-impl
+    versions:
+    - 3.4.5
+  - dependency-name: org.opensaml:opensaml-saml-api
+    versions:
+    - 3.4.5
+  - dependency-name: org.opensaml:opensaml-messaging-api
+    versions:
+    - 3.4.5
+  - dependency-name: org.opensaml:opensaml-security-impl
+    versions:
+    - 3.4.5
+  - dependency-name: org.opensaml:opensaml-security-api
+    versions:
+    - 3.4.5
+  - dependency-name: org.opensaml:opensaml-xmlsec-impl
+    versions:
+    - 3.4.5
+  - dependency-name: org.opensaml:opensaml-xmlsec-api
+    versions:
+    - 3.4.5
+  - dependency-name: org.opensaml:opensaml-profile-api
+    versions:
+    - 3.4.5
+  - dependency-name: org.opensaml:opensaml-soap-impl
+    versions:
+    - 3.4.5
+  - dependency-name: org.opensaml:opensaml-soap-api
+    versions:
+    - 3.4.5
+  - dependency-name: org.opensaml:opensaml-core
+    versions:
+    - 3.4.5
+  - dependency-name: io.micrometer:micrometer-registry-prometheus
+    versions:
+    - 1.6.1
+  - dependency-name: io.micrometer:micrometer-core
+    versions:
+    - 1.6.1
+  - dependency-name: org.geotools.xsd:gt-xsd-core
+    versions:
+    - "24.1"
+  - dependency-name: org.geotools:gt-shapefile
+    versions:
+    - "24.1"
+  - dependency-name: org.geotools:gt-xml
+    versions:
+    - "24.1"
+  - dependency-name: org.geotools.xsd:gt-xsd-gml3
+    versions:
+    - "24.1"
+  - dependency-name: org.geotools:gt-jts-wrapper
+    versions:
+    - "24.1"
+  - dependency-name: org.geotools:gt-cql
+    versions:
+    - "24.1"
+  - dependency-name: org.geotools:gt-opengis
+    versions:
+    - "24.1"
+  - dependency-name: org.geotools:gt-main
+    versions:
+    - "24.1"
+  - dependency-name: org.geotools:gt-referencing
+    versions:
+    - "24.1"
+  - dependency-name: org.geotools:gt-epsg-hsql
+    versions:
+    - "24.1"
+  - dependency-name: org.codice.test:failsafe-controller
+    versions:
+    - "0.9"
+  - dependency-name: org.codice.test:mockito-extensions
+    versions:
+    - "0.9"
+  - dependency-name: org.codice.test:hamcrest-extensions
+    versions:
+    - "0.9"
+  - dependency-name: org.codice.test:spock-extensions
+    versions:
+    - "0.9"
+  - dependency-name: org.codice.test:junit-extensions
+    versions:
+    - "0.9"
+  - dependency-name: org.codice.test:spock-all
+    versions:
+    - "0.9"
+  - dependency-name: org.apache.logging.log4j:log4j-slf4j-impl
+    versions:
+    - 2.14.0
+  - dependency-name: org.apache.logging.log4j:log4j-core
+    versions:
+    - 2.14.0
+  - dependency-name: org.apache.logging.log4j:log4j-api
+    versions:
+    - 2.14.0
+  - dependency-name: org.apache.logging.log4j:log4j-1.2-api
+    versions:
+    - 2.14.0
+  - dependency-name: com.google.protobuf:protobuf-java
+    versions:
+    - 3.14.0
+  - dependency-name: org.apache.zookeeper:zookeeper-jute
+    versions:
+    - 3.6.2
+  - dependency-name: org.apache.zookeeper:zookeeper
+    versions:
+    - 3.6.2
+  - dependency-name: org.apache.karaf.features:enterprise:features
+    versions:
+    - 4.3.0
+  - dependency-name: org.apache.karaf.itests:common
+    versions:
+    - 4.3.0
+  - dependency-name: org.apache.karaf:apache-karaf
+    versions:
+    - 4.3.0
+  - dependency-name: org.apache.karaf.features:spring:features
+    versions:
+    - 4.3.0
+  - dependency-name: org.apache.karaf.features:standard:features
+    versions:
+    - 4.3.0
+  - dependency-name: org.apache.karaf.log:org.apache.karaf.log.core
+    versions:
+    - 4.3.0
+  - dependency-name: org.apache.karaf:org.apache.karaf.util
+    versions:
+    - 4.3.0
+  - dependency-name: org.apache.karaf.jaas:org.apache.karaf.jaas.config
+    versions:
+    - 4.3.0
+  - dependency-name: org.apache.karaf.jaas:org.apache.karaf.jaas.modules
+    versions:
+    - 4.3.0
+  - dependency-name: org.apache.karaf.jaas:org.apache.karaf.jaas.boot
+    versions:
+    - 4.3.0
+  - dependency-name: org.apache.karaf.shell:org.apache.karaf.shell.core
+    versions:
+    - 4.3.0
+  - dependency-name: org.apache.karaf.shell:org.apache.karaf.shell.console
+    versions:
+    - 4.3.0
+  - dependency-name: org.apache.karaf.features:org.apache.karaf.features.core
+    versions:
+    - 4.3.0
+  - dependency-name: org.apache.karaf.bundle:org.apache.karaf.bundle.core
+    versions:
+    - 4.3.0
+  - dependency-name: org.apache.karaf:karaf
+    versions:
+    - 4.3.0
+  - dependency-name: org.apache.karaf.tooling:karaf-maven-plugin
+    versions:
+    - 4.3.0
+  - dependency-name: xml-apis:xml-apis
+    versions:
+    - 2.0.2
